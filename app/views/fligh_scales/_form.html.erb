@@ -1,0 +1,37 @@
+<%= form_for(@fligh_scale) do |f| %>
+  <% if @fligh_scale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fligh_scale.errors.count, "error") %> prohibited this fligh_scale from being saved:</h2>
+
+      <ul>
+      <% @fligh_scale.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scale_text %><br />
+    <%= f.text_area :scale_text %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br />
+    <%= f.number_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :post %><br />
+    <%= f.text_field :post %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

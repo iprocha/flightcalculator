@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  night_hours: 1
+  day_hours: 1
+  total_hours: 1
+  total_salary: 1
+
+two:
+  night_hours: 1
+  day_hours: 1
+  total_hours: 1
+  total_salary: 1

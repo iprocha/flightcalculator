@@ -1,0 +1,31 @@
+<h1>Listing fligh_scales</h1>
+
+<table>
+  <tr>
+    <th>Scale text</th>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Company</th>
+    <th>Post</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fligh_scales.each do |fligh_scale| %>
+  <tr>
+    <td><%= fligh_scale.scale_text %></td>
+    <td><%= fligh_scale.year %></td>
+    <td><%= fligh_scale.month %></td>
+    <td><%= fligh_scale.company %></td>
+    <td><%= fligh_scale.post %></td>
+    <td><%= link_to 'Show', fligh_scale %></td>
+    <td><%= link_to 'Edit', edit_fligh_scale_path(fligh_scale) %></td>
+    <td><%= link_to 'Destroy', fligh_scale, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fligh scale', new_fligh_scale_path %>

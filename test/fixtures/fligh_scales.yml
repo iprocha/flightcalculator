@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scale_text: MyText
+  year: 1
+  month: 1
+  company: MyString
+  post: MyString
+
+two:
+  scale_text: MyText
+  year: 1
+  month: 1
+  company: MyString
+  post: MyString

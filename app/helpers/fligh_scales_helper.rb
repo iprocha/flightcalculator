@@ -1,0 +1,2 @@
+module FlighScalesHelper
+end
